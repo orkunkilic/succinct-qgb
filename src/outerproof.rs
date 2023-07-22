@@ -236,7 +236,7 @@ impl QGBTree {
 mod tests {
     use std::thread;
 
-    use plonky2::field::{secp256k1_scalar::Secp256K1Scalar, types::Sample};
+    use plonky2::field::{secp256k1_scalar::Secp256K1Scalar, types::{Sample, Field}, goldilocks_field::GoldilocksField};
     use plonky2_ecdsa::curve::{secp256k1::Secp256K1, ecdsa::{ECDSASecretKey, ECDSAPublicKey, sign_message, ECDSASignature}, curve_types::{CurveScalar, Curve}};
 
     use super::*;

@@ -200,6 +200,7 @@ mod tests {
 
     use super::*;
     use plonky2::field::types::Sample;
+    use plonky2_ecdsa::curve::{ecdsa::{sign_message, ECDSASignature, ECDSASecretKey}, curve_types::{CurveScalar, Curve}};
 
     
     #[test]

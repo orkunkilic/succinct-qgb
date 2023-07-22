@@ -24,6 +24,7 @@ use std::fs::File;
 use std::io::prelude::*;
 use std::io::BufReader;
 use std::path::Path;
+use std::thread;
 
 use plonky2::field::secp256k1_scalar::Secp256K1Scalar;
 use plonky2::field::types::Field;
